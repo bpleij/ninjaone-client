@@ -1,0 +1,11 @@
+.global-header {
+    height: 50px;
+    border-style: solid;
+    border-color:#E8E8EA;
+    border-width: 0px 0px 1px 0px;
+    background-color: #002A42;
+}
+
+.logo {
+    width: 120px;
+}

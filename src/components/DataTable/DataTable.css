@@ -1,0 +1,127 @@
+.devices-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
+}
+
+.table-header {
+    display: flex;
+    align-items: center;
+    height: 31px;
+}
+
+.table-options {
+    display: flex;
+    gap: 8px;
+}
+
+.table-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.table-actions .search-bar {
+    width: 270px;
+}
+
+.table-actions .device-filter {
+    width: 200px;
+}
+
+.table-actions .sort-order {
+    width: 291px;
+}
+
+.cell-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 12px;
+    -webkit-transition: background-color 0.25s;
+    -moz-transition: background-color 0.25s;
+    transition: background-color 0.25s;
+}
+
+.cell-container:hover {
+    background-color: #F4F4F5;
+}
+
+.device-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    height: 52px;
+}
+
+.device-name {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+}
+
+.device-icon {
+    width: 14px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.device-info {
+    height: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    color: #6E6D7A;
+}
+
+/* Responsive design */
+@media screen and (max-width: 878px) {
+    .table-actions .search-bar {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .table-actions {
+        align-items: end;
+    }
+
+    .table-actions .table-options {
+        flex-direction: column;
+    }
+
+    .table-actions .search-bar {
+        width: 291px;
+    }
+
+    .table-actions .device-filter {
+        width: 291px;
+    }
+
+    .table-actions .sort-order {
+        width: 291px;
+    }
+}
+
+@media screen and (max-width: 386px) {
+    input, select {
+        font-size: 13px;
+    }
+
+    .table-actions .search-bar {
+        width: 264px;
+    }
+
+    .table-actions .device-filter {
+        width: 264px;
+    }
+
+    .table-actions .sort-order {
+        width: 264px;
+    }
+}
